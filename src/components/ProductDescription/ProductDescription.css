@@ -1,0 +1,24 @@
+.product-description {
+    margin: 20px auto; /* Ajusta el margen para centrar */
+    text-align: justify;
+    max-width: 100%; /* Ajusta el ancho máximo */
+    padding: 0 20px; /* Padding opcional para añadir espacio lateral */
+}
+
+.product-description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left; /* Alineación izquierda para los encabezados */
+    border-bottom: 1px solid #ddd; /* Línea inferior para separar secciones */
+    padding-bottom: 5px; /* Espacio debajo del encabezado */
+}
+
+.product-description p {
+    margin-bottom: 20px; /* Espacio entre párrafos */
+}
+
+.related-products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

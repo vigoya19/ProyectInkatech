@@ -1,0 +1,103 @@
+.header {
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    align-items: center;
+
+}
+
+.top-bar {
+    background-color: #8a4b56;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1rem;
+}
+
+.upper-header {
+    justify-content: flex-end; /* Cambiar a flex-end para alinear todo a la derecha */
+    align-items: center;
+    background-color: #f5f5f5; /* o el color que prefieras */
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.upper-links a {
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+    
+}
+
+
+
+.search-cart {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search-button {
+    padding: 5px 10px;
+    background-color: #8a4b56;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.search-button:hover {
+    background-color: #733f47;
+}
+
+.cart {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.main-header {
+    display: grid;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    
+}
+
+
+.logo {
+    margin-left: 24.2%;
+}
+
+/* Ajustar la imagen del logo */
+.logo img {
+    max-height: 60px;
+    width: auto;
+    margin-left: 150px;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    flex-grow: 1;
+    justify-content: center;
+  
+}
+
+
+.nav-links a {
+    color: #5a2d36;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+

@@ -1,0 +1,253 @@
+/* Estilos generales */
+.product-container {
+    display: flex;
+    flex-direction: row;
+
+    align-items: flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1400px;
+    flex-wrap: wrap;
+}
+
+.product-image {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0 20px;
+    max-width: 500px;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+   
+}
+
+.product-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border-bottom: 2px solid #ddd;
+}
+
+.product-angles {
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.product-angles img {
+    max-width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+
+.product-details {
+    flex: 1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #5a1e2c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.product-details p {
+    margin: 5px 0;
+    color: #999;
+}
+
+.product-details label {
+    font-weight: bold;
+    color: #5a1e2c;
+}
+
+#color {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#color img {
+    max-width: 50px;
+    height: auto;
+    border: double;
+}
+
+#talla {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#talla span {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#talla span:hover {
+    background-color: #f0f0f0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #7B3F00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5E2F00;
+}
+
+.tallas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tallas span {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    font-size: 16px;
+}
+
+.tallas span.selected {
+    background-color: #999;
+    border: 1px solid #666;
+    color: white;
+}
+
+.heart {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #ccc;
+    mask: url('https://www.svgrepo.com/show/297834/heart.svg') no-repeat center;
+    -webkit-mask: url('https://www.svgrepo.com/show/297834/heart.svg') no-repeat center;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.heart:hover {
+    background-color: #999;
+}
+
+.extra-info {
+    display: block;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.size-guide {
+    color: #010a13;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: underline;
+
+}
+
+.size-guide:hover {
+    text-decoration: underline;
+}
+
+.add-to-cart {
+    background-color: #7B3F00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 70%;
+}
+
+.add-to-cart:hover {
+    background-color: #5E2F00;
+}
+
+.heart {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: #ccc;
+    mask: url('https://www.svgrepo.com/show/297834/heart.svg') no-repeat center;
+    -webkit-mask: url('https://www.svgrepo.com/show/297834/heart.svg') no-repeat center;
+    mask-size: cover;
+    -webkit-mask-size: cover;
+    cursor: pointer;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-details {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+        width: 100%; /* Asegura que el texto se alinee dentro del contenedor */
+    }
+
+    .extra-info {
+        flex-direction: column;
+        align-items: center;
+        width: 100%; /* Asegura que los elementos se alineen dentro del contenedor */
+    }
+
+    .add-to-cart {
+        width: 100%;
+    }
+
+    .upper-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .upper-links a {
+        margin-bottom: 5px;
+    }
+
+    .size-guide, .add-to-cart {
+        width: 100%;
+    }
+
+    .size-guide {
+        text-align: center;
+
+    }
+}
