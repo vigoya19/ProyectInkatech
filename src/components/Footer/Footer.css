@@ -27,3 +27,14 @@
 .footer-section h3 {
     margin-top: 0;
 }
+
+.social-media {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0dedc;
+}
+
+.social-media p {
+    font-size: 24px;
+    margin: 0;
+}

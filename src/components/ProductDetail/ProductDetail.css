@@ -1,4 +1,3 @@
-/* Estilos generales */
 .product-container {
     display: flex;
     flex-direction: row;
@@ -7,7 +6,6 @@
     justify-content: space-between;
     align-items: flex-start;
     margin: 0 auto;
-    padding: 0 20px;
     max-width: 1400px;
     flex-wrap: wrap;
 }
@@ -51,6 +49,7 @@
     flex: 1;
     margin-left: 20px;
     text-align: left;
+    margin-left: 15%;
 }
 
 .product-details h1 {
@@ -209,7 +208,6 @@ button:hover {
     cursor: pointer;
 }
 
-/* Media Query para pantallas más pequeñas */
 @media (max-width: 768px) {
     .product-container {
         flex-direction: column;
@@ -220,13 +218,13 @@ button:hover {
         margin-left: 0;
         margin-top: 20px;
         text-align: center;
-        width: 100%; /* Asegura que el texto se alinee dentro del contenedor */
+        width: 100%;
     }
 
     .extra-info {
         flex-direction: column;
         align-items: center;
-        width: 100%; /* Asegura que los elementos se alineen dentro del contenedor */
+        width: 100%; 
     }
 
     .add-to-cart {

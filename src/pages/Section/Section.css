@@ -1,0 +1,39 @@
+.section {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-media {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .section-title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  }
+  
+  .section-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .centered .section-title {
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  

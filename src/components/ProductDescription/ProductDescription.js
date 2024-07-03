@@ -1,6 +1,5 @@
-// ProductDescription.js
 import React from "react";
-import "./ProductDescription.css"; // Importa el archivo de estilos
+import "./ProductDescription.css";
 
 const ProductDescription = () => {
   return (
@@ -23,9 +22,7 @@ const ProductDescription = () => {
         tellus arcu et lorem.
       </p>
 
-      <div className="related-products">
-        {/* Aquí puedes agregar imágenes de productos relacionados */}
-      </div>
+      <div className="related-products"></div>
     </div>
   );
 };

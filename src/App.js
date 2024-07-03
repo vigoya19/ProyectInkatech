@@ -9,11 +9,12 @@ import Category from "./pages/Category/Category";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
 import ProductDescription from "./components/ProductDescription/ProductDescription";
 import ProductRecommendations from "./components/ProductRecomendation/ProductRecommendations";
+import { SelectedProductProvider } from "./SelectedProductContext";
+
 import "./App.css";
 
 function App() {
   return (
-    // <div style={{ display: "grid" }}>
     <Provider store={store}>
       <Router>
         <Header />
@@ -23,22 +24,33 @@ function App() {
             <Route
               path="/product"
               element={
+                <SelectedProductProvider>
+                  <div>
+                    <ProductDetail />
+                    <ProductDescription />
+                    <ProductRecommendations />
+                  </div>
+                </SelectedProductProvider>
+              }
+            />
+            <Route
+              path="/category"
+              element={
                 <div>
-                  <ProductDetail />
-                  <ProductDescription />
-                  <ProductRecommendations />
+                  <Category />
                 </div>
               }
             />
-            <Route path="/category" element={<Category />} />
             <Route
               path="/product/:id"
               element={
-                <>
-                  <ProductDetail />
-                  <ProductDescription />
-                  <ProductRecommendations />
-                </>
+                <SelectedProductProvider>
+                  <>
+                    <ProductDetail />
+                    <ProductDescription />
+                    <ProductRecommendations />
+                  </>
+                </SelectedProductProvider>
               }
             />
           </Routes>
@@ -46,7 +58,6 @@ function App() {
         <Footer />
       </Router>
     </Provider>
-    // </div>
   );
 }
 
