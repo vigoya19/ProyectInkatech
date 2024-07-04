@@ -1,46 +1,48 @@
 import React from "react";
 import "./Home.css";
 import Section from "../Section/Section";
+import fondo from "../../assets/img/home.png";
+import moveImage from "../../assets/img/imageMove.png";
 
 function Home() {
   return (
     <div className="Home">
       <Section
-        image="https://via.placeholder.com/1200x400?text=Imagen1"
+        image={fondo}
         title="MOVE"
         linkText="Shop Now"
         className="large"
       />
+
       <Section
-        image="https://via.placeholder.com/600x300?text=Imagen2"
+        image={moveImage}
+        title="MOVE"
+        // isVideo={true}
+        className="large"
+      />
+      <Section
+        image="https://getwallpapers.com/wallpaper/full/4/1/9/172391.jpg"
         title="HOMBRE"
         className="medium"
       />
       <Section
-        image="https://via.placeholder.com/600x300?text=Imagen3"
+        image="https://1.bp.blogspot.com/-TxcAr6G2UTE/UWn5OVeECzI/AAAAAAAAAX4/KSyTIbMgZ4M/s1600/Fotolia_41313030_Subscription_XL.jpg"
         title="MUJER"
         className="medium"
       />
-      <Section
-        image="https://via.placeholder.com/1200x400?text=Imagen4"
-        title="MOVE"
-        isVideo={true}
-        className="large"
-      />
-
       <div className="double-column">
         <Section
-          image="https://via.placeholder.com/300x600?text=Imagen5"
+          image="https://2.bp.blogspot.com/-TFyT0RLZutA/UiFRRPG53UI/AAAAAAAB4b4/Gd5Ol2y3KmU/s1600/paisajes-bonitos-fondos-para-pc-laptop-y-tablets-im%C3%A1genes-gratis-para-compartir-en-facebook-+(4).jpg"
           title="ACCESORIOS"
           className="large-image"
         />
         <Section
-          image="https://via.placeholder.com/300x150?text=Imagen6"
+          image="https://getwallpapers.com/wallpaper/full/d/4/8/172485.jpg"
           title="MUJER"
           className="small-image"
         />
         <Section
-          image="https://via.placeholder.com/300x150?text=Imagen7"
+          image="https://cdn.wallpapersafari.com/57/96/yaDRHL.jpg"
           title="HOMBRE"
           className="small-image"
         />
